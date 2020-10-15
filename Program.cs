@@ -11,7 +11,8 @@ namespace TestTask
             while (true)
             {
                 message = Console.ReadLine();
-                Console.WriteLine(handler.Check(message));
+                bool result = handler.Check(message);
+                Console.WriteLine("Корректность ввода : " + result);
             }
         }
     }
